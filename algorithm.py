@@ -3,6 +3,8 @@ import os
 import pickle
 import sys
 
+import pandas as pd
+
 from datetime import datetime
 
 def get_input(local=False):
