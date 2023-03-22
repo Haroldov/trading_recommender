@@ -3,8 +3,6 @@ import os
 import pickle
 import sys
 
-import pandas as pd
-
 from datetime import datetime
 
 def get_input(local=False):
@@ -22,7 +20,7 @@ def get_input(local=False):
     dids = json.loads(dids)
 
     for did in dids:
-        filename = f"data/inputs/{did}/0"  # 0 for metadata service
+        filename = f"/data/inputs/{did}/0"  # 0 for metadata service
         print(f"Reading asset file {filename}.")
 
         return filename
